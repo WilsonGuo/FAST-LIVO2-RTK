@@ -1,0 +1,22 @@
+<launch>
+<!-- Launch file for Livox AVIA LiDAR -->
+
+	<arg name="rviz" default="true" />
+
+	<rosparam command="load" file="$(find fast_livo_rtk)/config/HH-LVGO-mid360s.yaml" />
+
+	<node pkg="fast_livo_rtk" type="fastlivo_mapping" name="laserMapping" output="screen">
+		<rosparam file="$(find fast_livo_rtk)/config/camera_mid360s.yaml" />
+		<param name="outputfilepath" value="$(find fast_livo_rtk)/output" />
+	
+	</node>
+	
+	<group if="$(arg rviz)">
+		<node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find fast_livo_rtk)/rviz_cfg/fast_livo2.rviz" />
+	</group>
+	
+	<node pkg="image_transport" type="republish" name="republish" args="compressed in:=/left_camera/image raw out:=/left_camera/image" output="screen" respawn="true"/>
+
+launch-prefix="gdb -ex run --args"
+launch-prefix="valgrind --leak-check=full"
+</launch> 	
