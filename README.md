@@ -1,4 +1,7 @@
 ### 增加了导出3DGS所需素材的功能
+<div align="center">
+  <img src="pics/3DGS.png" width="60%" alt="接入3DGS流程">
+</div>
 
 # FAST-LIVO2-RTK
 
