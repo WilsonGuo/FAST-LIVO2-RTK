@@ -1,3 +1,5 @@
+### 增加了导出3DGS所需素材的功能
+
 # FAST-LIVO2-RTK
 
 FAST-LIVO2-RTK extends FAST-LIVO2 with RTK/GNSS-constrained global optimization for long-term LiDAR-visual mapping.
