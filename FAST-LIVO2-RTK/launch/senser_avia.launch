@@ -1,0 +1,16 @@
+<launch>
+<!-- Launch file for Livox AVIA LiDAR -->
+ 
+ <!--just for calibration-->
+ <!-- <include file="/home/wilson/fast_livo_ws/src/livox_ros_driver/launch/livox_lidar.launch" ></include>
+ <include file="/home/wilson/fast_livo_ws/src/mvs_ros_pkg/launch/mvs_camera_trigger.launch" ></include> -->
+
+ <!--启动雷达-->
+ <include file="/home/wilson/fast_livo_ws/src/livox_ros_driver/launch/livox_lidar_msg.launch" ></include>
+ <!--启动相机-->
+ <include file="/home/wilson/fast_livo_ws/src/mvs_ros_pkg/launch/mvs_camera_trigger.launch" ></include>
+ <!--启动RTK-->
+ <!-- <include file="/home/wilson/fast_livo_ws/src/nmea_navsat_driver_R1/launch/r1_serial_driver.launch" ></include> -->
+
+
+</launch> 	
