@@ -3,6 +3,11 @@
   <img src="pics/3DGS.png" width="60%" alt="接入3DGS流程">
 </div>
 
+可以搭配 Global-LVBA
+
+ See [Global-LVBA](https://github.com/WilsonGuo/Global-LVBA).
+
+
 # FAST-LIVO2-RTK
 
 FAST-LIVO2-RTK extends FAST-LIVO2 with RTK/GNSS-constrained global optimization for long-term LiDAR-visual mapping.
